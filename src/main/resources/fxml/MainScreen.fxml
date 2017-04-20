@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="381.0" prefWidth="355.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pkproject.internetcourse.application.controller.MainController">
+   <children>
+      <VBox layoutX="137.0" layoutY="127.0" prefHeight="154.0" prefWidth="87.0" spacing="25.0">
+         <children>
+            <Button fx:id="btnLogging" mnemonicParsing="false" onAction="#goToLogging" prefHeight="25.0" prefWidth="88.0" text="Logging" />
+            <Button fx:id="btnRegistration" mnemonicParsing="false" onAction="#goToRegistration" prefHeight="25.0" prefWidth="88.0" text="Registration" />
+            <Button fx:id="btnInformation" mnemonicParsing="false" onAction="#goToInformation" prefHeight="25.0" prefWidth="89.0" text="Information" />
+            <Button mnemonicParsing="false" onAction="#exitWithProgram" prefHeight="25.0" prefWidth="94.0" text="exit" />
+         </children>
+      </VBox>
+   </children>
+</Pane>

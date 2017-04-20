@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="263.0" layoutY="22.0" text="Choice course">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Button layoutX="460.0" layoutY="76.0" mnemonicParsing="false" onAction="#searchData" text="search" />
+      <HBox layoutX="27.0" layoutY="76.0" prefHeight="25.0" prefWidth="210.0" spacing="20.0">
+         <children>
+            <RadioButton fx:id="rbBasicLevel" mnemonicParsing="false" selected="true" text="basic level">
+               <toggleGroup>
+                  <ToggleGroup fx:id="tgCourseLevel" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rbAdvancedLevel" mnemonicParsing="false" text="advanced level" toggleGroup="$tgCourseLevel" />
+         </children>
+      </HBox>
+      <Button layoutX="185.0" layoutY="309.0" mnemonicParsing="false" text="Button" />
+      <TableView layoutX="17.0" layoutY="109.0" prefHeight="200.0" prefWidth="152.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="name" />
+          <TableColumn prefWidth="75.0" text="level" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

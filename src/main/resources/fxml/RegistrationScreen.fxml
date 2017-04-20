@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="516.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pkproject.internetcourse.application.controller.RegistrationController">
+   <children>
+      <VBox layoutX="197.0" layoutY="112.0" prefHeight="205.0" prefWidth="120.0" spacing="20.0">
+         <children>
+            <TextField fx:id="tfFullName" />
+            <TextField fx:id="tfLogin" />
+            <TextField fx:id="tfEmail" />
+            <TextField fx:id="tfPassword" promptText="**********************" />
+            <TextField fx:id="tfReTypePassword" promptText="**********************" />
+         </children>
+      </VBox>
+      <Button fx:id="btnBack" layoutX="23.0" layoutY="401.0" mnemonicParsing="false" onAction="#goToMainScreen" text="back" />
+      <Button fx:id="signUp" layoutX="447.0" layoutY="401.0" mnemonicParsing="false" onAction="#goToMainScreen" text="sign up" />
+      <Label layoutX="179.0" layoutY="43.0" prefHeight="25.0" prefWidth="179.0" text="Registration">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <HBox layoutX="98.0" layoutY="341.0" prefHeight="25.0" prefWidth="266.0" spacing="20.0">
+         <children>
+            <Label prefHeight="20.0" prefWidth="81.0" text="account type" />
+            <RadioButton fx:id="rbTrainee" mnemonicParsing="false" selected="true" text="Trainee">
+               <toggleGroup>
+                  <ToggleGroup fx:id="accountGroup" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rbInstructor" mnemonicParsing="false" text="Instructor" toggleGroup="$accountGroup" />
+         </children>
+      </HBox>
+      <VBox layoutX="66.0" layoutY="112.0" prefHeight="205.0" prefWidth="120.0" spacing="20.0">
+         <children>
+            <Label prefHeight="26.0" prefWidth="132.0" text="Type fullname:" />
+            <Label prefHeight="26.0" prefWidth="132.0" text="Type login:" />
+            <Label prefHeight="26.0" prefWidth="132.0" text="Type email:" />
+            <Label prefHeight="26.0" prefWidth="132.0" text="Type password:" />
+            <Label prefHeight="26.0" prefWidth="132.0" text="Re-Type password:" />
+         </children>
+      </VBox>
+   </children>
+</Pane>
